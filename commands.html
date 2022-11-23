@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Асами - Команды</title>
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Asami - Discord bot</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="assets/img/aurora.ico">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/head.css">
+      <link rel="stylesheet" href="css/loading.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/commands.css"
+      <!-- style css -->
+      <!-- Responsive-->
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <link rel="stylesheet" href="css/bulma.min.css" />
+ 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body onload="loaderFunction()">
+
+<div id="loader">
+    <div class="loading">
+    <span></span>
+    </div>
+</div>
+
+
+<div id="page">
+      <!-- header -->
+      <a id="backtotop" data-tippy-content="Back To Top.">
+        <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+      </a>
+      <!-- Back To Top End -->
+  
+      <!-- Navbar Start -->
+      <nav
+        class="navbar is-fixed-top"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand mt-2 mb-2">
+          <a class="navbar-item" href="index.html">
+            <strong>Asami</strong>
+  
+            <!-- or if you want to use image -->
+            <!-- <img
+              src="image link or path"
+              width="112"
+              height="28"
+            /> -->
+          </a>
+          <!--<a
+            role="button"
+            class="navbar-burger has-text-white"
+            data-target="navMenu"
+            aria-label="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>-->
+        </div>
+  
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item is-tab">
+              Домой
+            </a>
+  
+            <a href="commands.html" class="navbar-item is-tab">
+              Команды
+            </a>
+  
+            <a href="https://discord.com/invite/ZHBjGM3rmY" class="navbar-item is-tab">
+              Поддержка
+            </a>
+  
+            <a href="#" class="navbar-item is-tab">
+              Документация
+            </a>
+          </div>
+  
+          <div class="navbar-end">
+            <a href="#" class="navbar-item is-tab" target="_blank">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+  
+            <a href="#" class="navbar-item is-tab" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+ 
+<div class="container clear noselect">
+  <div class="row wrapper">
+
+      <div class="sidepanel">
+          <a class="title" href="#commands">Commands</a>
+
+          <a class="section" href="#information"><i class="fa fa-info-circle" aria-hidden="true"></i> Информация</a>
+          <a class="section" href="#moderation"><i class="fa fa-shield" aria-hidden="true"></i> Модерация </a>
+          <a class="section" href="#automod"><i class="fa fa-lock" aria-hidden="true"></i> Автомодерация </a>
+          <a class="section" href="#economics"><i class="fa-solid fa-coins"></i> Экономика </a>
+          <a class="section" href="#leveling"><i class="fa-solid fa-dragon"></i> Уровни </a>
+          <a class="section" href="#marriage"><i class="fa fa-heart" aria-hidden="true"></i> Любовь и свадьбы </a>
+          <a class="section" href="#welcomers"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Приветствия и прощания </a>
+          <a class="section" href="#on_nitro"><i class="fa fa-diamond" aria-hidden="true"></i> Благодарности за нитро буст (alpha) </a>
+          <a class="section" href="#emotions"><i class="fa-solid fa-masks-theater"></i> Эмоции </a>
+          <a class="section" href="#tickets"><i class="fa fa-ticket" aria-hidden="true"></i> Тикеты </a>
+          <a class="section" href="#logging"><i class="fas fa-file"></i> Логирование событий </a>
+          <a class="section" href="#leaderboard"><i class="fas fa-trophy"></i> Топы </a>
+          <a class="section" href="#locales"><i class="fa fa-language" aria-hidden="true"></i> Локализации </a>
+          <a class="section" href="#profiles"><i class="fa fa-user" aria-hidden="true"></i> Профили </a>
+          <a class="section" href="#stats"><i class="fa fa-bar-chart" aria-hidden="true"></i> Статистика </a>
+          <a class="section" href="#autoroles"><i class="fa fa-cog" aria-hidden="true"></i> Автороли </a>
+          <a class="section" href="#funny"><i class="fa fa-smile-o" aria-hidden="true"></i> Развлечения </a>
+      </div>
+
+      <div class="right-col">
+              
+      <div id="information" style="width:24%; margin:30px 0;"></div>
+      
+        <div class="commandBlock">
+          <h1>Команды</h1>
+          <div>Синтаксис:
+            <ul>
+              <li><span class="codeBlock">< ></span> : Обязательный аргумент</li>
+              <li><span class="codeBlock">[ ]</span> : Не обязательный аргумент</li>
+              <li id="anime"><span class="codeBlock">( )</span> : Псевдонимы команды</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commandBlock">
+          <h2>Информация</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/help</span> — Отправляет меню команд</li>
+              <div class="cmdCollapse">
+                Отправляет меню со всеми командами бота, разделёнными на категории
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/help</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/help</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/ping</span> — Задержка бота в данный момент</li>
+              <div class="cmdCollapse">
+                Отправляет задержку ответа бота (пинг), обозначаемую в милисекундах (ms)
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/ping</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/ping</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/server</span>  — Информация о сервере</li>
+              <div class="cmdCollapse">
+                Отправляет всю основную информацию о сервере, которую боту удастся найти
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/server</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/server</span>
+                <br>
+                <b>Примечания :</b> Некоторые параметры могут быть None, что значит, что на сервере они не установлены
+              </div>
+              <li class="collapsible"><span class="codeBlock">/user</span>  — Информация о пользователе</li>
+              <div class="cmdCollapse">
+                Отправляет всю основную информацию о пользователе, которую боту удастся найти
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/user &lt;пользователь&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/user @Феникс</span>
+                <br>
+                <b>Примечания :</b> Desktop Discord status - статус онлайна на ПК версии, Web Discord status - статус онлайна в браузерной версии, Mobile Discord status - статус онлайна в мобильной версии
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="moderation" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Модерация</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/mute</span> — Временно ограничить чат пользователю</li>
+              <div class="cmdCollapse">
+                Выдаёт пользователю наказание в виде timeout на указанное количество времени, подробнее про Timeout'ы:<br> <a href="https://support.discord.com/hc/ru/articles/4413305239191-Time-Out-FAQ">Гайд дискорда</a>
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/mute &lt;@Пользователь&gt; &lt;время&gt; [причина]</span>
+                <br>
+                <b>Примеры :</b><br> <span class="codeBlock">/mute @Феникс 13m</span>
+                <br>
+                <span class="codeBlock">/mute @Феникс 23h Просто так</span>
+                <br>
+                <span class="codeBlock">/mute @Феникс 14d Какой-то долгий мут, может сразу в бан?</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-shield" aria-hidden="true"></i> Для использования команды нужны модераторские права: <b>moderate_members</b> (возможность выдавать timeout) <br> Бот должен иметь как минимум аналогичные права
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/unmute</span> — Снять ограничение чата</li>
+              <div class="cmdCollapse">
+                Снимает с пользователя временное ограничение чата путём установления параметра времени ограничения на None
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/unmute &lt;@Пользователь&gt; </span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/unmute @Феникс</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-shield" aria-hidden="true"></i> Для использования команды нужны модераторские права: <b>moderate_members</b> (возможность выдавать timeout) <br> Бот должен иметь как минимум аналогичные права
+              </div>
+              <li class="collapsible"><span class="codeBlock">/mutes</span>  — Список активных мутов</li>
+              <div class="cmdCollapse">
+                Отправляет список активных мутов на сервере с указанием времени мута для каждого пользователя
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/mutes</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/mutes</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/clear</span>  — Удаляет сообщения</li>
+              <div class="cmdCollapse">
+                Удаляет сообщения в канале, в котором данная команда была использована, можно удалить до 1000 сообщений за раз
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/clear &lt;Количество сообщений&gt; [id сообщения удалить до которого] [id сообщения удалить после которого]</span>
+                <br>
+                <b>Примеры :</b><br> <span class="codeBlock">/clear 100</span>
+                <br>
+                <span class="codeBlock">/clear 150 1005047009486589992</span>
+                <br>
+                <span class="codeBlock">/clear 200 998843639524503644 1005427885957459979</span>
+                <br>
+                <b>Примечания :</b> Id сообщения можно получить нажав пкм по сообщению и копировать ID, если включен режим разработчика. <br> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/warn</span> — Выдать предупреждение</li>
+              <div class="cmdCollapse">
+                Выдаёт пользователю предупреждение с уникальным ID на вашем сервере</a>
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/warn &lt;@Пользователь&gt; [причина]</span>
+                <br>
+                <b>Примеры :</b><br> <span class="codeBlock">/warn @Феникс</span>
+                <br>
+                <span class="codeBlock">/warn @Феникс 123</span>
+                <br>
+                <span class="codeBlock">/mute @Феникс Просто какая-то причина для варна, почему нет?</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-shield" aria-hidden="true"></i> Для использования команды нужны модераторские права: <b>manage_messages</b> (возможность удалять сообщения)
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/unwarn</span> — Снять предупреждение</li>
+              <div class="cmdCollapse">
+                Снимает с пользователя предупреждение по уникальному ID на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/unwarn &lt;@Пользователь&gt; &lt;ID предупреждения&gt;</span>
+                <br>
+                <b>Пример :</b><br> <span class="codeBlock">/unwarn @Феникс 880055535</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-shield" aria-hidden="true"></i> Для использования команды нужны модераторские права: <b>manage_messages</b> (возможность удалять сообщения)
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/warns</span> — Список предупреждений пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет список предупреждений с их ID и указанными причинами которые выдавались на вашем сервере указанному в параметрах команды пользователю
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/warns &lt;@Пользователь&gt;</span>
+                <br>
+                <b>Пример :</b><br> <span class="codeBlock">/warns @Феникс</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/edit_warn</span> — Изменить предупреждение</li>
+              <div class="cmdCollapse">
+                Изменяет указанное предупреждение по ID и его причину на новую, указанную в параметрах
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/edit_warn &lt;ID предупреждения&gt; &lt;новая причина&gt;</span>
+                <br>
+                <b>Пример :</b><br> <span class="codeBlock">/edit_warn 880055535 Новая причина предупреждения</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-shield" aria-hidden="true"></i> Для использования команды нужны модераторские права: <b>manage_messages</b> (возможность удалять сообщения)
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="automod" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Автомодерация</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/automod setup</span> — Устанавливает полную систему автомодерации без ограничений на сервере. Работает только для серверов - сообществ с community типом модерации</li>
+              <div class="cmdCollapse">
+                Устанавливает полную систему автомодерации без ограничений на сервере. У вас должен быть включен Community тип модерации в /automod moderation_mode, а таккже сообщество на самом сервере и автомодерация на самом сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod setup</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod setup</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/automod word_add</span> — Добавляет новое запрещённое слово для автомодерации</li>
+              <div class="cmdCollapse">
+                Добавляет новое запрещённое на сервере слово. Работает независимо от типа модерации для обоих типов
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod word_add &lt;Слово&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod word_add негр</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/automod word_remove</span>  — Удаляет слово из автомодерации</li>
+              <div class="cmdCollapse">
+                Удаляет запрещённое слово из списка
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod word_remove &lt;Слово&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod word_remove негр</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/automod exempt_role_add</span>  — Работает только для серверов - сообществ с community типом модерации. Добавляет исключение для данной роли, пользователям с этой ролью можно будет нарушать правила автомодерации.</li>
+              <div class="cmdCollapse">
+                Команда работает только для серверов-сообществ с соответствующими типами модерации
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod exempt_role_add &lt;@Роль&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod exempt_role_add @Модератор</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/automod exempt_role_remove</span> — Убирает исключение для данной роли</li>
+              <div class="cmdCollapse">
+                Команда работает только для серверов-сообществ с соответствующими типами модерации
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod exempt_role_remove &lt;@Роль&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod exempt_role_remove @Модератор</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/automod exempt_channel_add</span> — Работает только для серверов - сообществ с community типом модерации. Добавляет исключение для данного канала, в нём можно будет нарушать правила автомодерации</li>
+              <div class="cmdCollapse">
+                Команда работает только для серверов-сообществ с соответствующими типами модерации
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod exempt_channel_add &lt;#Канал&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod exempt_channel_add #токсичный_чат</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/automod exempt_channel_remove</span> — Убирает исключение для канала</li>
+              <div class="cmdCollapse">
+                Команда работает только для серверов-сообществ с соответствующими типами модерации
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod exempt_channel_remove &lt;#Канал&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod exempt_channel_remove #токсичный_чат</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/automod nickname_detect</span> — Включает/Отключает поиск запрещённых слов в никнеймах</li>
+              <div class="cmdCollapse">
+                True - включить, False - выключить поиск запрещённых слов добавленных через /automod word_add в никнеймах пользователей, пишущих и заходящих на сервер, нарушители будут кикнуты с сервера и уведомлены в личные сообшения о нарушении и необходимости изменить статус активности
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod nickname_detect &lt;True/False&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod nickname_detect True</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/automod description_detect</span> — Включает/Отключает поиск запрещённых слов в статусах активности</li>
+              <div class="cmdCollapse">
+                True - включить, False - выключить поиск запрещённых слов добавленных через /automod word_add в описании статусов активности пользователей, пишущих и заходящих на сервер, нарушители будут кикнуты с сервера и уведомлены в личные сообшения о нарушении и необходимости изменить статус активности
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod description_detect &lt;True/False&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod description_detect True</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/automod link_detect</span> — Включает/Отключает блокировку ссылок</li>
+              <div class="cmdCollapse">
+                Включает/выключает возможность отправлять ссылки и приглашения на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod link_detect &lt;True/False&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod link_detect True</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/automod enable</span> — Включает/Отключает автомодерацию</li>
+              <div class="cmdCollapse">
+                Включает/Выключает всю автомодерацию
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod enable &lt;True/False&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod enable True</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/automod moderation_mode</span> — Изменяет вид модерации на сервере</li>
+              <div class="cmdCollapse">
+                Community - тип модерации подходит для модерации на серверах - сообществах, Friends_group - для маленьких серверов не сообществ, состоящих из группы друзей
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/automod moderation_mode &lt;community/friends_group&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/automod enable True</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="economics" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Экономика</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/balance</span> — Узнать баланс</li>
+              <div class="cmdCollapse">
+                Отправляет виртуальную карточку вашего баланса или баланса указанного в параметрах пользователя
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/balance [@Пользователь]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/balance @Феникс</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/add_money</span> — Добавить деньги</li>
+              <div class="cmdCollapse">
+                Добавляет указанному пользователю деньги на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/add_money &lt;@Пользователь&gt; &lt;деньги&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/add_money @Феникс 1000</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/remove_money</span>  — Забрать деньги</li>
+              <div class="cmdCollapse">
+                Забирает у указанного пользователя деньги на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/remove_money &lt;@Пользователь&gt; &lt;деньги&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/remove_money @Феникс 1000</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/reset balance</span>  — Сбросить баланс</li>
+              <div class="cmdCollapse">
+                Сбрасывает у указанного пользователя баланс до стандартно установленного на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/reset balance &lt;@Пользователь&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/reset balance @Феникс 1000</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/reset economics</span>  — Сбросить экономику</li>
+              <div class="cmdCollapse">
+                Сбрасывает баланс всех пользователей на вашем сервере до стандартно установленного на вашем сервере значения
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/reset economics</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/reset economics</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/timely</span>  — Забрать денежную награду</li>
+              <div class="cmdCollapse">
+                Выдаёт пользователю установленную на сервере награду при использовании данной команды
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/timely</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/timely</span>
+                <br>
+                <b>Примечания :</b> Команду можно использовать раз в 3 часа
+              </div>
+              <li class="collapsible"><span class="codeBlock">/give</span>  — Передать валюту</li>
+              <div class="cmdCollapse">
+                Передаёт валюту с вашего баланса(снимает с него) на баланс указанного пользователя
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/give &lt;@Пользователь&gt; &lt;деньги&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/give @Феникс 1000</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/add-shop</span>  — Добавить роль в магазин</li>
+              <div class="cmdCollapse">
+                Добавляет в магазин ролей на вашем сервере указанную роль
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/add-shop &lt;@Роль&gt; &lt;цена&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/add-shop @роль 5000</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/remove-shop</span>  — Убрать роль из магазина</li>
+              <div class="cmdCollapse">
+                Добавляет в магазин ролей на вашем сервере указанную роль
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/remove-shop &lt;@Роль&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/remove-shop @роль</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/shop</span>  — Магазин сервера</li>
+              <div class="cmdCollapse">
+                Позволяет посмотреть магазин ролей на сервере и купить роли
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/shop</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/shop</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set currency</span>  — Установить символ валюты</li>
+              <div class="cmdCollapse">
+                Устанавливает новый символ валюты на вашем сервере, символом должен быть эмодзи или какой-то текстовый символ, буква, цифра, их набор
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set currency &lt;символ&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set currency 💵</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set start_balance</span>  — Установить начальный баланс</li>
+              <div class="cmdCollapse">
+                Устанавливает новый стандартный баланс на сервере для новых гостей или при /reset balance /reset economics командах
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set start_balance &lt;деньги&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set start_balance 300</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set timely_amount</span>  — Установить выплату /timely</li>
+              <div class="cmdCollapse">
+                Устанавливает новое стандартное количество денег, выдаваемое при прописывании /timely на сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set timely_amount &lt;деньги&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set timely_amount 300</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/slots</span>  — Сыграть в слоты</li>
+              <div class="cmdCollapse">
+                Одна из казино игр бота - слоты, если вы проигрываете, то теряете всю ставку, если выигрываете, то ваша ставка умножается на некоторый множитель
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/slots &lt;ставка&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/slots 100</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/blackjack</span>  — Сыграть в блэкджек</li>
+              <div class="cmdCollapse">
+                Одна из казино игр бота - блэкджек, если вы проигрываете, то теряете всю ставку, если выигрываете, то получаете бонус в виде поставленной ставки, если получается блэкджек, то x1.5 от поставленной ставки <br> <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D1%8D%D0%BA%D0%B4%D0%B6%D0%B5%D0%BA">Подробнее про блэкджек</a>
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/blackjack &lt;ставка&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/blackjack 100</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/gamble</span>  — Сыграть в броски</li>
+              <div class="cmdCollapse">
+                Одна из казино игр бота - броски кубика, если вы проигрываете, то теряете случайный процент ставки, если выигрываете, то получаете случайный процент от ставки, вы и бот бросаете кубики 3 раза и получаете число от 1 до 18
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/gamble &lt;ставка&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/gamble 100</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/wheel</span>  — Крутить колесо</li>
+              <div class="cmdCollapse">
+                Одна из казино игр бота - колесо, колесо и множители крутятся, а вы крутите стрелку и получаете один из множителей, назад вы получаете свою ставку, умноженную на полученный множитель
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/wheel &lt;ставка&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/wheel 100</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/duel</span>  — Начать дуэль</li>
+              <div class="cmdCollapse">
+                Одна из казино игр бота -дуэль, вы стартуете дуэль со ставкой, кто-то её принимает и победитель получает ставку, а проигравший платит
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/duel &lt;ставка&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/duel 100</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/income channel</span>  — Отключить/Включить доход в канале</li>
+              <div class="cmdCollapse">
+                Отключает или включает возможность зарабатывать валюту сервера в указанном текстовом канале сервера, с помощью параметров True/False(включеено выключено)
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/income channel &lt;#Текстовый_Канал&gt; &lt;True/False&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/income channel #флуд False</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/income min_max_message</span>  —  Настроить доход за написание сообщений</li>
+              <div class="cmdCollapse">
+                Настраивает минимальный и максимальный доход, который пользователь получает за написание сообщений в неотключенных от системы доходов каналах
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/income min_max_message &lt;минимальное_количество&gt; &lt;максимальное_количество&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/income min_max_message 3 6</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/income min_max_voice</span>  —  Настроить доход за написание сообщений</li>
+              <div class="cmdCollapse">
+                Настраивает минимальный и максимальный доход, который пользователь получает за нахождение в голосовом канале, внимание, расчёт валюты происходит после выхода пользователя из голосового чата, как и начисление ему времени за нахождение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/income min_max_voice &lt;минимальное_количество&gt; &lt;максимальное_количество&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/income min_max_voice 3 6</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/income messages_per_income</span>  —  Настроить кол-во сообщений для выдачи дохода</li>
+              <div class="cmdCollapse">
+                Настраивает количество сообщений необходимое пользователю написать для получения дохода за написание сообщений
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/income messages_per_income &lt;число сообщений&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/income messages_per_income 5</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/income role_add</span>  —  Добавить выдачу раз в 12 часов валюты роли</li>
+              <div class="cmdCollapse">
+                Настраивает систему доходов раз в 12 часов для указанной роли с указанным количеством дохода
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/income role_add &lt;@Роль&gt; &lt;доход&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/income role_add @VIP 200</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/income role_remove</span>  —  Убрать выдачу раз в 12 часов валюты роли</li>
+              <div class="cmdCollapse">
+                Настраивает систему доходов раз в 12 часов для указанной роли с указанным количеством дохода
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/income role_add &lt;@Роль&gt; &lt;доход&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/income role_remove @VIP</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="leveling" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Уровни</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/level</span> — Узнать уровень</li>
+              <div class="cmdCollapse">
+                Отправляет вашу карточку уровня или указанного в параметрах пользователя
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/level [@Пользователь]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/level @Феникс</span>
+                <br>
+                <b>Примечания :</b> Формула вычисления опыта нужного для следующего уровня: <b>(7 * (уровень**2)) + 58</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/add_exp</span> — Добавить опыт</li>
+              <div class="cmdCollapse">
+                Добавляет указанному пользователю некоторое количество опыта на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/add_exp &lt;@Пользователь&gt; &lt;опыт&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/add_exp @Феникс 100</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/remove_exp</span> — Забрать опыт</li>
+              <div class="cmdCollapse">
+                Убирает у указанного пользователя некоторое количество опыта на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/remove_exp &lt;@Пользователь&gt; &lt;опыт&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/remove_exp @Феникс 100</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/reset_level</span> — Сбросить уровень и опыт</li>
+              <div class="cmdCollapse">
+                Сбрасывает указанному пользователю весь опыт до 0 и уровень до 1, то есть очищает до стартовой точки
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/reset_level &lt;пользователь&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/reset_level @Феникс</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set level</span> — Установить уровень</li>
+              <div class="cmdCollapse">
+                Устанавливает пользователю указанный в параметрах уровень
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set level &lt;пользователь&gt; &lt;уровень&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set level @Феникс 88</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set min_max_exp</span> — Установить промежуток опыта</li>
+              <div class="cmdCollapse">
+                Устанавливает на сервере минимальный и максимальный промежутки получаемого опыта за сообщения в чат, опыт будет начисляться между минимальным и максимальным значением случайным образом, значения могут быть равны, если вы не хотите рандомизации
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set min_max_exp &lt;минимальный опыт&gt; &lt;максимальный опыт&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set min_max_exp 20 30</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set level_up_messages</span> — Вкл/выкл сообщения о повышении уровня</li>
+              <div class="cmdCollapse">
+                Включает или выключает на вашем сервере уведомления о том, что пользователь повысил свой уровень
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set level_up_messages &lt;turn on/turn off&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set level_up_messages &lt;turn on/turn off&gt;</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="marriage" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Любовь и свадьбы</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/marry</span> — Отправить запрос на свадьбу</li>
+              <div class="cmdCollapse">
+                Предлагает указанному пользователю вступить с вами в брак
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/marry &lt;@Пользователь&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/marry @Феникс</span>
+                <br>
+                <b>Примечания :</b> успешная свадьба стоит 10000 валюты на сервере
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/loveprofile</span> — Профиль пары</li>
+              <div class="cmdCollapse">
+                Отправляет карточку профиля вашей пары
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/loveprofile</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/loveprofile</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-heart" aria-hidden="true"></i> Для использования команды вы должны быть в браке
+              </div>
+              <li class="collapsible"><span class="codeBlock">/lovedescription</span> — Описание профиля пары</li>
+              <div class="cmdCollapse">
+                Устанавливает описание в вашем профиле пары
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/lovedescription &lt;текст&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/lovedescription &lt;текст&gt;</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-heart" aria-hidden="true"></i> Для использования команды вы должны быть в браке
+              </div>
+              <li class="collapsible"><span class="codeBlock">/lovedeposit</span> — Положить деньги на семейный счёт</li>
+              <div class="cmdCollapse">
+                Зачисляет деньги с вашего баланса на семейный счёт
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/lovedeposit &lt;деньги&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/lovedeposit &lt;деньги&gt;</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-heart" aria-hidden="true"></i> Для использования команды вы должны быть в браке
+              </div>
+              <li class="collapsible"><span class="codeBlock">/divorce</span> — Развод</li>
+              <div class="cmdCollapse">
+                Убирает у указанного пользователя некоторое количество опыта на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/divorce</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/divorce</span>
+                <br>
+                <b>Примечания :</b> <i class="fa fa-heart" aria-hidden="true"></i> Для использования команды вы должны быть в браке
+              </div>
+              <li class="collapsible"><span class="codeBlock">/waifu</span> — Профиль вайфу</li>
+              <div class="cmdCollapse">
+                Отправляет ваш профиль вайфу или указанного пользователя
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/waifu [@Пользователь]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/waifu @Феникс</span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/like</span> — Указать пользователя который нравится</li>
+              <div class="cmdCollapse">
+                Устанавливает в ваш вайфу профиль пользователя, который вам нравится
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/like &lt;пользователь&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/like @Феникс 88</span>
+                <br>
+                <b>Примечания :</b>  —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/unlike</span> — Больше никто не нравится</li>
+              <div class="cmdCollapse">
+                Изменяет параметр нравящегося вам пользователя на пустой, то есть сбрасывает
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/unlike</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/unlike</span>
+                <br>
+                <b>Примечания :</b>  —
+              </div>
+              <li class="collapsible"><span class="codeBlock">/gifts</span> — Магазин подарков</li>
+              <div class="cmdCollapse">
+                Отправляет меню магазина подарков
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/gifts</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/gifts</span>
+                <br>
+                <b>Примечания :</b> Магазин подарков фиксирован у бота и возможность его серверно менять не планируется
+              </div>
+              <li class="collapsible"><span class="codeBlock">/gift</span> — Подарить подарок</li>
+              <div class="cmdCollapse">
+                Отправляет меню магазина подарков
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/gift &lt;пользователь&gt; &lt;подарок&gt; &lt;количество&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/gift @Феникс 2. Teddy Bear 🧸 40 </span>
+                <br>
+                <b>Примечания :</b> —
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="welcomers" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Приветствия и прощания</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/set welcome_channel</span> — Установить канал приветствий</li>
+              <div class="cmdCollapse">
+                Устанавливает канал для приветствий, в него будут отправляться сообщения - приветствия новых пользователей, посетивших сервер
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set welcome_channel &lt;#Текстовый_Канал&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set welcome_channel #welcome</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set welcome_message_type</span> — Установить тип приветствий</li>
+              <div class="cmdCollapse">
+                Устанавливает тип приветствий, карточка(card) - изображение с приветствием, эмбед(embed) - настраиваемое текстовое embed сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set welcome_message_type &lt;card/embed&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set welcome_channel card</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set welcome_message_state</span> — Включить/отключить приветствия</li>
+              <div class="cmdCollapse">
+                Включает или отключает приветствия новых пользователей на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set welcome_message_state &lt;turn on/turn off&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set welcome_message_state turn on</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set welcome_embed</span> — Настроить приветственный эмбед</li>
+              <div class="cmdCollapse">
+                Вызывает modal меню настройки приветственного эмбеда, можно указывать следующие параметры в ОПИСАНИИ и ТИТУЛЬНИКЕ эмбеда: {member.mention}, {member.created_at}, {member.name}, {guild.name}, {guild.members}
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set welcome_embed</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set welcome_embed</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set goodbye_channel</span> — Установить канал прощаний</li>
+              <div class="cmdCollapse">
+                Устанавливает канал для прощаний, в него будут отправляться сообщения - прощания с пользователями, покинувшими сервер
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set goodbye_channel &lt;#Текстовый_Канал&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set goodbye_channel #bye-bye</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set goodbye_message_type</span> — Установить тип прощаний</li>
+              <div class="cmdCollapse">
+                Устанавливает тип прощаний, карточка(card) - изображение с приветствием, эмбед(embed) - настраиваемое текстовое embed сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set goodbye_message_type &lt;card/embed&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set goodbye_channel card</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set goodbye_message_state</span> — Включить/отключить приветствия</li>
+              <div class="cmdCollapse">
+                Включает или отключает прощания с пользователями на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set goodbye_message_state &lt;turn on/turn off&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set goodbye_message_state turn on</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+              <li class="collapsible"><span class="codeBlock">/set goodbye_embed</span> — Настроить прощальный эмбед</li>
+              <div class="cmdCollapse">
+                Вызывает modal меню настройки прощального эмбеда, можно указывать следующие параметры в ОПИСАНИИ и ТИТУЛЬНИКЕ эмбеда: {member.mention}, {member.created_at}, {member.name}, {guild.name}, {guild.members}
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set goodbye_embed</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set goodbye_embed</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="on_nitro" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Благодарности за Нитро буст (alpha, не тестировано, нужны тестировщики)</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/set nitro_channel</span> — Установить канал Благодарности за нитро буст</li>
+              <div class="cmdCollapse">
+                Устанавливает канал для Благодарностей за буст, в него будут отправляться сообщения для забустивших сервер
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set nitro_channel &lt;#Текстовый_Канал&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set nitro_channel #спасибочки</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set nitro_embed</span> — Установить нитро сообщение</li>
+              <div class="cmdCollapse">
+                Вызывает modal меню настройки эмбеда благодарности за буст, можно указывать следующие параметры в ОПИСАНИИ и ТИТУЛЬНИКЕ эмбеда: {member.mention}, {member.created_at}, {member.name}, {guild.name}, {guild.members}
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set nitro_embed</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set nitro_embed</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set nitro_messages_state</span> — Включить/отключить благодарности за буст</li>
+              <div class="cmdCollapse">
+                Включает или отключает благодарности за нитро буст на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set nitro_messages_state &lt;turn on/turn off&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set nitro_messages_state turn on</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div id="emotions" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Эмоции</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/emotion kiss</span> — Поцеловать пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - поцелуй с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion kiss &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion kiss @Clonexy2362 Цмок тебя! </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion hug</span> — Обнять пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - объятия с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion hug &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion hug @Clonexy2362 Обнимашки! </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion idk</span> — Не знаю</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - "не знаю", также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion idk [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion idk Я знаю, что ничего не знаю </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion f</span> — Press F to pay respects</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию мем - "PAY RESPECTS", также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion f [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion f rest in pepperoni bro :( </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion punch</span> — Ударить пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - объятия с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion punch &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion punch @Феникс2 Не стоит меня злить!!!!! </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion cry</span> — Заплакать</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - "плачу", также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion cry [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion cry Ну вот и зачем вы меня довели т_т</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion bite</span> — Укусить пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - кусь с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion bite &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion bite @Феникс Покусаю </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion spank</span> — Отшлёпать пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - порка с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion spank &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion spank @Феникс Надо было себя хорошо вести и слушаться! </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion highfive</span> — Дать пять пользователю</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - пятюня с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion highfive &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion highfive @Феникс Дай пять! </span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion pat</span> — Погладить пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - поглаживание с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion pat &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion pat @Феникс</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/emotion lick</span> — Лизнуть пользователя</li>
+              <div class="cmdCollapse">
+                Отправляет эмоцию - облизывание с упоминанием указанного пользователя, также дополнительно может быть добавлено сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/emotion lick &lt;@Пользователь&gt; [сообщение]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/emotion lick @Феникс</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="tickets" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Тикеты</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/setup_tickets</span> — Установить систему тикетов на сервере</li>
+              <div class="cmdCollapse">
+                Устанавливает в канал систему тикетов на сервере, отправит в данный канал сообщение для создания тикетов независимо от параметра, при указании параметра auto - создаст категорию для тикетов, в которую они будут добавляться и запомнит эту категорию, также создаст такую же категорию - архив, для тикетов, которые уже были закрыты, при указании параметра self - не будет создавать категорию для тикетов и архива и будет ждать, когда пользователь установит их командами самостоятельно
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/setup_tickets &lt;auto/self&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/setup_tickets auto</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set ticket_category</span> — Установить категорию для тикетов</li>
+              <div class="cmdCollapse">
+                Устанавливает/изменяет категорию для тикетов на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set ticket_category  &lt;ID категории&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set ticket_category 924537076735676416</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set ticket_archive</span> — Установить категорию - архив для тикетов</li>
+              <div class="cmdCollapse">
+                Устанавливает/изменяет категорию - архив для тикетов на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set ticket_archive  &lt;ID категории&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set ticket_category 924537076735676420</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set ticket_support</span> — Установить роль модератора тикетов</li>
+              <div class="cmdCollapse">
+                Устанавливает/изменяет роль, люди с данной ролью будут автоматически добавляться в тикет с возможностью отвечать в нём
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set ticket_support  &lt;@Роль&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set ticket_support @</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="logging" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Логирование событий</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/set logging_channel</span> — Установить канал для логов</li>
+              <div class="cmdCollapse">
+                Устанавливает в канал систему логирования событий на сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set logging_channel &lt;#Текстовый_Канал&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set logging_channel #аудит</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/set logging_state</span> — Включить/выключить логирование</li>
+              <div class="cmdCollapse">
+                Включает/Выключает логирование событий на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set logging_state &lt;turn on/turn off&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set logging_state turn on</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="leaderboard" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Топы</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/leaderboard money</span> — Топ по деньгам</li>
+              <div class="cmdCollapse">
+                Отправляет доску лидеров(топ 18) на сервере по деньгам
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/leaderboard money</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/leaderboard money</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/leaderboard level</span> — Топ по уровням</li>
+              <div class="cmdCollapse">
+                Отправляет доску лидеров(топ 18) на сервере по уровням
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/leaderboard level</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/leaderboard level</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/leaderboard waifu</span> — Топ по общей стоимости вайфу(подаренных подарков)</li>
+              <div class="cmdCollapse">
+                Отправляет доску лидеров(топ 18) на сервере по стоимостя профиля вайфу, то есть суммарной стоимости подаренных пользователю подарков
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/leaderboard waifu</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/leaderboard waifu</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/leaderboard messages</span> — Топ по количеству сообщений</li>
+              <div class="cmdCollapse">
+                Отправляет доску лидеров(топ 18) на сервере по количеству написанных сообщений
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/leaderboard messages</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/leaderboard messages</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/leaderboard voice</span> — Топ по времени в голосовых каналах</li>
+              <div class="cmdCollapse">
+                Отправляет доску лидеров(топ 18) на сервере по времени проведённом в голосовых каналах
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/leaderboard voice</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/leaderboard voice</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="locales" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Локализации</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/set locale</span> — Установить язык ответа</li>
+              <div class="cmdCollapse">
+                Устанавливает язык ответа бота на один из имеющихся, все команды на сервере будут отправляться в указанном языке
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/set locale &lt;язык&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/set locale russian</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="profiles" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Профили</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/profile show</span> — Профиль</li>
+              <div class="cmdCollapse">
+                Отправляет ваш профиль или указанного в параметрах пользователя
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/profile show [@Пользователь]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/profile show @Clonexy2362</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/profile description</span> — Установить описание профиля</li>
+              <div class="cmdCollapse">
+                Устанавливает в профиль новое описание
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/profile me &lt;текст&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/profile description Классное новое описание, привет!</span>
+                <br>
+                <b>Примечания :</b> Описание должно быть не более 140 символов
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/profile badges</span> — Отобразить достижения значков профиля</li>
+              <div class="cmdCollapse">
+                Устанавливает в профиль новое описание
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/profile badges</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/profile badges</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="stats" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Статистика</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/online</span> — Посмотреть онлайн в голосовых</li>
+              <div class="cmdCollapse">
+                Отправляет ваш профиль или указанного в параметрах пользователя
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/profile me [@Пользователь]</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/profile me @Феникс</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/messages_counter</span> — Узнать количество сообщений</li>
+              <div class="cmdCollapse">
+                Устанавливает в профиль новое описание
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/profile me &lt;текст&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/profile description Классное новое описание, привет!</span>
+                <br>
+                <b>Примечания :</b> Описание должно быть не более 140 символов
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="autoroles" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Автороли</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/autorole on_enter</span> — Установить автороль на входе</li>
+              <div class="cmdCollapse">
+                Устанавливает автороль на вашем сервере для новых пользователей, которые получат её автоматически, присоединившись на сервер
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole on_enter &lt;@Роль&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole on_enter @новичок</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/autorole enable</span> — Включает/выключает автороли</li>
+              <div class="cmdCollapse">
+                Включает/выключает систему выдачи авторолей на вашем сервере
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole enable &lt;turn on/turn off&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole enable turn on</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/autorole add_for_level</span> — Добавить автороль за уровень</li>
+              <div class="cmdCollapse">
+                Добавляет в базу данных запись для проверки при повышении уровня о том, что на указанном уровне необходимо автоматически выдать указанную роль
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole add_for_level &lt;@Рольf&gt; &lt;Уровеньf&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole add_for_level @Уровень5 5</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/autorole remove_for_level</span> — Убрать автороль за уровень</li>
+              <div class="cmdCollapse">
+                Убирает автоматическую выдачу роли указанной за данный уровень
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole remove_for_level &lt;уровень&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole remove_for_level 5</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/autorole display_for_level</span> — Показать все автороли за уровень</li>
+              <div class="cmdCollapse">
+                Отправляет список всех авторолей за уровень
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole display_for_level</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole display_for_level</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/autorole add_on_reaction</span> — Добавить автороль за реакцию на сообщение</li>
+              <div class="cmdCollapse">
+                Добавляет в базу данных запись для проверки при нажатии на указанное сообщение(проверяется по ID) в указанном канале на указанное в ходе исполнения команды(при её выполнении будет предложено далее прикрепить эмодзи к сообщению) эмодзи - выдать указанную роль
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole add_on_reaction &lt;канал&gt; &lt;ID сообщения&gt; &lt;@Роль&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole add_on_reaction #роли 1010570727612751882 @verified</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/autorole remove_on_reaction</span> — Убрать автороль за реакцию на сообщение</li>
+              <div class="cmdCollapse">
+                Убирает указанную автороль за реакцию на сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole remove_on_reaction &lt;@Роль&gt;</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole remove_on_reaction @202</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/autorole display_on_reaction</span> — Показать все автороли за реакции на сообщение</li>
+              <div class="cmdCollapse">
+                Отправляет список авторолей за реакции на сообщение
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/autorole display_on_reaction</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/autorole display_on_reaction</span>
+                <br>
+                <b>Примечания :</b> <i class="fa-solid fa-crown"></i> Для использования команды нужны администраторские права: <b>administrator</b>
+              </span></div>
+            </ul>
+          </div>
+        </div>
+        <div id="funny" style="width:24%; margin:30px 0;"></div>
+        <div class="commandBlock">
+          <h2>Развлечения</h2>
+          <div>
+            <ul>
+              <li class="collapsible"><span class="codeBlock">/brick_knife_evidence_yandere</span> —  Игра: Кирпич Нож Компромат Яндере Тентакли</li>
+              <div class="cmdCollapse">
+                Уникальная игра по типу ножниц и бумаги, только в аниме - тематике
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/brick_knife_evidence_yandere</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/brick_knife_evidence_yandere</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/ball</span> — Шар предсказаний</li>
+              <div class="cmdCollapse">
+                Отвечает с помощью Шара предсказаний на заданный вами вопрос
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/ball</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/ball</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/coin</span> — Подбросить монетку</li>
+              <div class="cmdCollapse">
+                Подбрасывает монетку и выпадает орёл/решка
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/coin</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/coin</span>
+                <br>
+                <b>Примечания :</b> —
+              </span></div>
+              <li class="collapsible"><span class="codeBlock">/cat</span> — Случайное изображение котика</li>
+              <div class="cmdCollapse">
+                Работает с Some Random Api, через метод GET к указанному endpoint изображения животного, после отправляет полученную в виде json url ссылку, уже завёрнутую в дискордовский embed формат
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/cat</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/cat</span>
+                <br>
+                <b>Примечания :</b> — 
+              </div>
+              <li class="collapsible"><span class="codeBlock">/dog</span> — Случайное изображение собаки</li>
+              <div class="cmdCollapse">
+                Работает с Some Random Api, через метод GET к указанному endpoint изображения животного, после отправляет полученную в виде json url ссылку, уже завёрнутую в дискордовский embed формат
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/dog</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/dog</span>
+                <br>
+                <b>Примечания :</b> — 
+              </div>
+              <li class="collapsible"><span class="codeBlock">/fox</span> — Случайное изображение лисы</li>
+              <div class="cmdCollapse">
+                Работает с Some Random Api, через метод GET к указанному endpoint изображения животного, после отправляет полученную в виде json url ссылку, уже завёрнутую в дискордовский embed формат
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/fox</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/fox</span>
+                <br>
+                <b>Примечания :</b> — 
+              </div>
+              <li class="collapsible"><span class="codeBlock">/panda</span> — Случайное изображение панды</li>
+              <div class="cmdCollapse">
+                Работает с Some Random Api, через метод GET к указанному endpoint изображения животного, после отправляет полученную в виде json url ссылку, уже завёрнутую в дискордовский embed формат
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/panda</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/panda</span>
+                <br>
+                <b>Примечания :</b> — 
+              </div>
+              <li class="collapsible"><span class="codeBlock">/red_panda</span> — Случайное изображение красной панды</li>
+              <div class="cmdCollapse">
+                Работает с Some Random Api, через метод GET к указанному endpoint изображения животного, после отправляет полученную в виде json url ссылку, уже завёрнутую в дискордовский embed формат
+                <br>
+                <b>Использование :</b> <span class="codeBlock">/red_panda</span>
+                <br>
+                <b>Пример :</b> <span class="codeBlock">/red_panda</span>
+                <br>
+                <b>Примечания :</b> — 
+              </div>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+  </div>
+  
+</div>
+</div>
+<footer id="fix">
+  <div class="copyright">
+     <div class="container">
+        <div class="row">
+           <div class="col-md-12">
+              <div class="content has-text-centered has-text-white">
+                <div class="mb-2">
+                  <a href="https://discord.com/invite/ZHBjGM3rmY" class="has-text-white" target="_blank">
+                   <i class="fa-brands fa-discord"></i>
+                  </a>
+                  &nbsp; &nbsp;
+                  <a href="https://github.com/Fenixinc220" class="has-text-white" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  &nbsp; &nbsp;
+                  <a href="privacy.html" class="has-text-white" target="_blank">
+                   Политика конфиденциальности
+                 </a>
+                 &nbsp; &nbsp;
+                 <a href="tos.html" class="has-text-white" target="_blank">
+                   Условия пользования
+                 </a>
+                </div>
+         
+                 <p>
+                   <span class="has-text-weight-bold">ASAMI</span>
+                   <br />
+                   &copy; <span id="cp-year"></span> Copyright ASAMI. All Rights
+                   Reserved.
+                 </p>
+               </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</footer>
+  <script src="js/index.js"></script>
+  <script src="js/commands.js"></script>
+  <script src="js/three.r119.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>
